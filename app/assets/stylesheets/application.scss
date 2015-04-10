@@ -16,22 +16,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap-custom";
 
-ul {
-  padding: 0;
-  margin-bottom: 0;
-}
-
-li {
-  list-style: none;
-}
-
-._1,
-._2,
-._3,
-._4,
-._5,
-._6,
-._7,
-._8 {
-  min-height: 90px;
+td.skills {
+  display: inline-block;
 }
