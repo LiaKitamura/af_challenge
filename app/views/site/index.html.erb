@@ -1,0 +1,113 @@
+<div class="row">
+
+  <!-- List of Jobs -->
+  <div class="col-sm-1">
+    <h4>Job</h4>
+    <ul>
+      <% @jobs.each do |job| %>
+        <li class="<%=job.name%>"><%= job.name %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <!-- Applicant Names -->
+  <div class="col-sm-2">
+    <h4>Applicant Name</h4>
+    <ul class="web_dev_names">
+    <% @web_developer.each do |developer| %>
+      <li class="<%= developer.id %>"><%= developer.name %></li>
+    <% end %>
+    </ul>
+    <ul class="designer_names">
+      <% @designer.each do |designer| %>
+        <li><%= designer.name %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <!-- Applicant Email Address -->
+  <div class="col-sm-2">
+    <h4>Email Address</h4>
+    <ul>
+    <% @web_developer.each do |developer| %>
+      <li class="<%= developer.id %>"><%= developer.email %></li>
+    <% end %>
+    </ul>
+    <ul>
+      <% @designer.each do |designer| %>
+        <li><%= designer.email %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <!-- Applicant Websites -->
+  <div class="col-sm-2">
+    <h4>Website</h4>
+    <ul>
+    <% @web_developer.each do |developer| %>
+      <li class="<%= developer.id %>"><%= developer.website %></li>
+    <% end %>
+    </ul>
+    <ul>
+      <% @designer.each do |designer| %>
+        <li><%= designer.website %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <!-- Applicant Skills -->
+  <div class="col-sm-1">
+    <h4>Skills</h4>
+    <% @web_developer.each do |developer| %>
+      <ul class="<%= developer.name %>">
+        <% developer.skills.each do |skill| %>
+          <li><%= skill.name %></li>
+        <% end %>
+      </ul>
+    <% end %>
+    <ul>
+      <% @designer.each do |designer| %>
+        <% designer.skills.each do |skill| %>
+          <li><%= skill.name %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+
+  <!-- Applicant Cover Letters -->
+  <div class="col-sm-4">
+    <h4>Cover Letter Paragraph</h4>
+    <ul>
+    <% @web_developer.each do |developer| %>
+      <li class="<%= developer.id %>"><%= developer.cover_letter %></li>
+    <% end %>
+    </ul>
+    <ul>
+      <% @designer.each do |designer| %>
+        <li><%= designer.cover_letter %></li>
+      <% end %>
+    </ul>
+  </div>
+
+</div>
+
+<!-- <table class="table table-bordered">
+  <tr>
+    <th>Job</th>
+    <th>Applicant Name</th>
+    <th>Email Address</th>
+    <th>Website</th>
+    <th>Skills</th>
+    <th>Cover Letter Paragraph</th>
+  </tr>
+  <tr>
+    <% @jobs.each do |job| %>
+      <td rowspan="10"><%= job.name %></td>
+    <% end %>
+  </tr>
+  <tr>
+    <% @web_developer.each do |developer| %>
+      <td rowspan=<% developer.skills.length %>><%= developer.name %></td>
+    <% end %>
+  </tr>
+</table> -->
