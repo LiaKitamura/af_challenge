@@ -1,17 +1,17 @@
-<!-- <div class="row"> -->
+<div class="row">
 
   <!-- List of Jobs -->
-  <!-- <div class="col-sm-1">
+  <div class="col-sm-1 job_list">
     <h4>Job</h4>
     <ul>
       <% @jobs.each do |job| %>
         <li class="<%=job.name%>"><%= job.name %></li>
       <% end %>
     </ul>
-  </div> -->
+  </div>
 
   <!-- Applicant Names -->
-  <!-- <div class="col-sm-2">
+  <div class="col-sm-2 applicants">
     <h4>Applicant Name</h4>
     <ul class="web_dev_names">
     <% @web_developer.each do |developer| %>
@@ -23,10 +23,10 @@
         <li class="_<%= designer.id %>"><%= designer.name %></li>
       <% end %>
     </ul>
-  </div> -->
+  </div>
 
   <!-- Applicant Email Address -->
-  <!-- <div class="col-sm-2">
+  <div class="col-sm-2 emails">
     <h4>Email Address</h4>
     <ul>
     <% @web_developer.each do |developer| %>
@@ -38,10 +38,10 @@
         <li class="_<%= designer.id %>"><%= designer.email %></li>
       <% end %>
     </ul>
-  </div> -->
+  </div>
 
   <!-- Applicant Websites -->
-  <!-- <div class="col-sm-2">
+  <div class="col-sm-2 websites">
     <h4>Website</h4>
     <ul>
     <% @web_developer.each do |developer| %>
@@ -53,45 +53,45 @@
         <li class="_<%= designer.id %>"><%= designer.website %></li>
       <% end %>
     </ul>
-  </div> -->
+  </div>
 
   <!-- Applicant Skills -->
-  <!-- <div class="col-sm-1">
+  <div class="col-sm-1 skills">
     <h4>Skills</h4>
     <% @web_developer.each do |developer| %>
-      <ul class="<%= developer.name %>">
+      <ul class="_<%= developer.id %>">
         <% developer.skills.each do |skill| %>
           <li><%= skill.name %></li>
         <% end %>
       </ul>
     <% end %>
     <% @designer.each do |designer| %>
-      <ul class="<%= designer.name %>">
+      <ul class="_<%= designer.id %>">
         <% designer.skills.each do |skill| %>
           <li><%= skill.name %></li>
         <% end %>
       </ul>
     <% end %>
-  </div> -->
+  </div>
 
   <!-- Applicant Cover Letters -->
-  <!-- <div class="col-sm-4">
+  <div class="col-sm-4 c_l">
     <h4>Cover Letter Paragraph</h4>
-    <ul>
-    <% @web_developer.each do |developer| %>
-      <li class="_<%= developer.id %>"><%= developer.cover_letter %></li>
-    <% end %>
+    <ul class="cover_letters">
+      <% @web_developer.each do |developer| %>
+        <li class="<%= developer.name %>"><%= developer.cover_letter %></li>
+      <% end %>
     </ul>
-    <ul>
+    <ul class="cover_letters">
       <% @designer.each do |designer| %>
-        <li class="_<%= designer.id %>"><%= designer.cover_letter %></li>
+        <li class="<%= designer.name %>"><%= designer.cover_letter %></li>
       <% end %>
     </ul>
   </div>
 
-</div> -->
+</div>
 
-<table>
+<!-- <table>
   <thead>
     <tr>
       <th>Job</th>
@@ -115,9 +115,9 @@
     <% end %>
   </tr>
   <tr>
-    <td>Designer</td>
+    <td>Designer</td> -->
     <!-- <% @web_developer.each do |developer| %>
       <td rowspan=<% developer.skills.length %>><%= developer.name %></td>
     <% end %> -->
-  </tr>
-</table>
+  <!-- </tr>
+</table> -->

@@ -16,6 +16,60 @@
 @import "bootstrap-sprockets";
 @import "bootstrap-custom";
 
-td.skills {
-  display: inline-block;
+// td.skills {
+//   display: inline-block;
+// }
+
+$blk-border: 1px solid black;
+
+// .cover_letters.li {
+//   min-height: 80px;
+// }
+
+li {
+  list-style: none;
+}
+
+ul,
+.col-sm-1,
+.col-sm-2,
+.col-sm-4 {
+  padding: 0;
+  margin: 0;
+}
+
+.col-sm-1,
+.col-sm-2,
+.col-sm-4,
+.Designer {
+  border-top: $blk-border;
+}
+
+h4,
+li._1,
+ul._1,
+.Russ,
+li._4,
+ul._4,
+.Katarina,
+li._3,
+ul._3,
+.Miss,
+li._2,
+ul._2,
+.Dakota {
+  border-bottom: $blk-border;
+}
+
+.job_list,
+.applicants,
+.emails,
+.websites,
+.skills,
+.c_l {
+  border-right: $blk-border;
+}
+
+.job_list {
+  border-left: $blk-border;
 }
