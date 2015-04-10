@@ -20,19 +20,24 @@ $(document).ready(function(){
 
   // Katarina Mills. Id: 4
   var $webSkillsNewHeight = $('.Katarina').height();
-  $('.4').height($webSkillsNewHeight);
+  $('._4').height($webSkillsNewHeight);
 
   // Miss Cortez Hilpert. Id: 3
   var $webSkillsNewHeight = $('.Miss').height();
-  $('.3').height($webSkillsNewHeight);
+  $('._3').height($webSkillsNewHeight);
 
   // Dakota Kautzer. Id: 2
   var $webSkillsNewHeight = $('.Dakota').height();
-  $('.2').height($webSkillsNewHeight);
+  $('._2').height($webSkillsNewHeight);
 
   // Russ Waters. Id: 1
   var $webSkillsNewHeight = $('.Russ').height();
-  $('.1').height($webSkillsNewHeight);
+  $('._1').height($webSkillsNewHeight);
+
+
+  var $designerSkillsNewHeight = $('.Mikel').height();
+  $('._8').height($designerSkillsNewHeight);
+
 
   // sets web developer job height to the same height of the web developer applicant names
   var $webNewHeight = $('.web_dev_names').height();
